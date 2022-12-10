@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixel-perfect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a315c85372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-div flex align-center space-between">
+            <h1 class="logo">Blogin<span class="point">.</span></h1>
+            <nav class="main-nav">
+                <ul class="header-ul flex clean-list flex-column">
+                    <li>Journal</li>
+                    <li>About</li>
+                    <li>Work</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+    <main class="main-container flex flex-column">
+        <div class="card flex flex-column align-center">
+            <img src="img/01.png">
+            <div class="text-container flex-column flex space-between">
+                <div class="text-title">Duis aute irure dolor in
+                                    henderit in voluptate.</div>
+                <div class="text-body">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur...</p>
+                </div>
+                <button onclick="onOpenModal()">Continue Reading </button>
+            </div>
+        </div>
+        <div class="card flex flex-column align-center">
+            <img src="img/02.png">
+            <div class="text-container flex-column flex space-between">
+                <div class="text-title">Duis aute irure dolor in henderit in voluptate.</div>
+                <div class="text-body">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur...</p>
+                </div>
+                <button onclick="onOpenModal()">Continue Reading </button>
+            </div>
+        </div>
+        <div class="card flex flex-column align-center">
+            <img src="img/03.png">
+            <div class="text-container flex-column flex space-between">
+                <div class="text-title">Duis aute irure dolor in henderit in voluptate.</div>
+                <div class="text-body">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur...</p>
+                </div>
+                <button onclick="onOpenModal()">Continue Reading </button>
+            </div>   
+        </div>
+        <div class="next-prev-container">
+            <span class="prev">← Prev</span>
+            <span class="next">Next →</span>
+        </div>
+    </main>
+    <footer class="flex align-center">
+        <div class="footer-item-container flex align-center flex-column space-between">
+            <div class="logo logo-footer">Blogin<span class="point">.</span></div>
+            <div class="footer-middele">© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at Pixelhint.com</div>
+            <ul class="icon flex clean-list">
+                <li class="facebook"><i class="fa-solid fa-f"></i></li>
+                <li class="twitter"><i class="fa-brands fa-twitter"></i></li>
+                <li class="be"><i class="fa-brands fa-behance"></i></li>
+                <li class="ball"><i class="fa-brands fa-dribbble flex"></i></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="modal hide-modal flex align-center">
+        <div class="text-container">
+            <div class="text-title">Duis aute irure dolor in henderit in voluptate.</div>
+            <div class="text-body">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur...</p>
+            </div>
+            <button onclick="onCloseModal()">Close</button>
+        </div>   
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
