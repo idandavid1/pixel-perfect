@@ -11,3 +11,7 @@ function onOpenModal(){
 function onCloseModal(){
     document.body.classList.remove('show-modal')
 }
+
+function onToggleJournal(){
+    document.querySelector('.journal ul').classList.toggle('show-journal')
+}
