@@ -43,28 +43,21 @@ body{
     float: right;
     margin-bottom: 20px;
 }
-.modal {
-    display: block;
-    justify-content: center;
-    background: rgba(214, 210, 210, 0.8);
-    position: fixed;
-    height: 60vh;
-    width: 50vw;
-    top: 20%;
-    left: 20%;
-    border-radius: 10px;
-}
-
-.modal.hide-modal{
+body .modal {
     display: none;
 }
 
 header{
     width: 100%;
-    height: 130px;
     box-shadow: inset 0 -6px 0 var(--clr3);
     background-color: var(--clr6);
     color: var(--clr0);
+}
+
+header button {
+    padding: 5px;
+    border-radius: 10px;
+    align-self: center;
 }
 
 .flex {
@@ -89,6 +82,22 @@ header{
     list-style-type: none;
 }
 
+body.show-modal .modal{
+    display: flex;
+    justify-content: center;
+    background: var(--clr0);
+    position: fixed;
+    width: 35em;
+    height: 25em;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+
 .main-container, .header-div{
     max-width: var(--s);
     margin-left: auto;
@@ -103,6 +112,10 @@ nav li:hover{
 .card button:hover {
     color: greenyellow;
     border: 2px solid  greenyellow;
+} 
+
+.card button:hover::after {
+    content: "  →";
 } 
 
 .logo{
@@ -136,7 +149,7 @@ img {
 }
 
 .text-body{
-    line-height: 1.25em;
+    line-height: 1.25;
     width: 27.8125em;
 }
 
@@ -145,16 +158,16 @@ img {
 }
 
 button {
-    height: 2.5em;
-    width: 135px;
     color: var(---clr1);
-    line-height: 20px;
+    line-height: 1.25;
     text-align: center;
     letter-spacing: 0.03em;
     border: 2px solid var(--clr2);
     background-color: var(---clr0);
-    border-radius: 10px;
     cursor: pointer;
+    padding: 0.75em 1.625em;
+    align-self: flex-start;
+    border-radius: 2em;
 }
 
 .menu-toggle-btn {
@@ -224,9 +237,8 @@ footer {
     position: fixed;
     top: 130px;
     right: 0;
-    height: 100vh;
-    background: rgb(255 255 255 / 80%);
-    color: var(--clr6);
+    background: var(--clr6);
+    color: var(--clr0);
     border-inline-start: 1px solid #ccc;
     min-width: 130px;
     transition: transform .6s, box-shadow .6s;
@@ -234,7 +246,13 @@ footer {
 
 body.menu-open .main-nav ul {
     transform: translateX(0);
-    box-shadow: -6px 0px 14px rgb(0 0 0 / 20%);
+}
+
+body.menu-open .main-container{
+    opacity: 0.5;
+}
+body.show-modal .main-container{
+    opacity: 0.5;
 }
 
 nav li{
@@ -247,13 +265,18 @@ nav li{
     cursor: pointer;
 }
 
-@media (max-width: 790px) {
-    .header-ul {
-        transform: translateX(100%);
-    }
+.header-ul {
+    transform: translateX(100%);
 }
+/* 
+header{
+    height: 130px;
+} */
 
 @media (min-width: 790px) {
+    .header-ul {
+        transform: translateX(0);
+    }
     .card{
         flex-direction: row;
     }
@@ -273,7 +296,6 @@ nav li{
     .header-ul {
         flex-direction: row;
         position: static;
-        height: 130px;
         background-color: var(--clr6);
         border-inline-start: 0;
     }
@@ -283,7 +305,7 @@ nav li{
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
     .main-container {
         font-size: 16px;
     }

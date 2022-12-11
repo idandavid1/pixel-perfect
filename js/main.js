@@ -5,9 +5,9 @@ function toggleMenu() {
 }
 
 function onOpenModal(){
-    document.querySelector('.modal').classList.remove('hide-modal')
+    document.body.classList.add('show-modal')
 }
 
 function onCloseModal(){
-    document.querySelector('.modal').classList.add('hide-modal')
+    document.body.classList.remove('show-modal')
 }
