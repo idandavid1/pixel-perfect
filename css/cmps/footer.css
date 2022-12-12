@@ -1,0 +1,14 @@
+
+footer {
+    height: 315px;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.footer-item-container {
+    height: 50%;
+}
+
+.logo-footer{
+    color: var(--clr6);
+}

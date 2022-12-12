@@ -1,0 +1,16 @@
+.journal ul.show-journal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 130px;
+    background-color: var(--clr6);
+    color: var(--clr0);
+}
+
+@media (min-width: 790px) {
+    .journal ul.show-journal {
+        flex-direction: column;
+        top: 130px;
+        right: 390px;
+    }
+}

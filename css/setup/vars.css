@@ -1,0 +1,14 @@
+:root {
+    /* pallete */
+    --clr0: #ffffff;
+    --clr1: #c2c1c1;
+    --clr2: #c2c2c2;
+    --clr3: #606060;
+    --clr4: #4f4e4e;
+    --clr5: #292929;
+    --clr6: #0c0c0c;
+    /* bp */
+    --s: 475px;
+    --m:810px;
+    --l: 980px;
+}

@@ -1,0 +1,12 @@
+button {
+    color: var(---clr1);
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 2px solid var(--clr2);
+    background-color: var(---clr0);
+    cursor: pointer;
+    padding: 0.75em 1.625em;
+    align-self: flex-start;
+    border-radius: 2em;
+}

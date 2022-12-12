@@ -1,0 +1,27 @@
+
+.icon li {
+    display: flex;
+    margin-inline-end: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #e1e0e0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.facebook:hover {
+    background-color: blue;
+}
+
+.twitter:hover {
+    background-color: aqua;
+}
+
+.be:hover {
+    background-color: green;
+}
+
+.ball:hover {
+    background-color: orange;
+}

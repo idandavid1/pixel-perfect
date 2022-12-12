@@ -1,0 +1,27 @@
+
+.close-model{
+    float: right;
+    margin-bottom: 20px;
+}
+body .modal {
+    display: none;
+}
+
+body.show-modal .modal{
+    display: flex;
+    justify-content: center;
+    background: var(--clr0);
+    position: fixed;
+    width: 35em;
+    height: 25em;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+body.show-modal .main-container{
+    opacity: 0.5;
+}
